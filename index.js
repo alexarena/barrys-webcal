@@ -63,7 +63,7 @@ function flatten(arr) {
   }, [])
 }
 
-app.get('/', async (req, res) => {
+app.get('*', async (req, res) => {
   const { token } = req.query
 
   try {
