@@ -63,8 +63,8 @@ function flatten(arr) {
   }, [])
 }
 
-app.get('/:token', async (req, res) => {
-  const { token } = req.params
+app.get('/', async (req, res) => {
+  const { token } = req.query
 
   try {
     const sessions = await fetchSessions(token)
